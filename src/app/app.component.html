@@ -1,5 +1,15 @@
-<div class="row">
-  <jo-open-file-button label="Datei öffnen" color="" (fileSelected)="onFileSelected($event)">
-  </jo-open-file-button>
+<div class="mat-app-background" [class.dark]="useDarkTheme">
+  <mat-slide-toggle color="primary" (change)="applyTheme($event)">
+    Enable Dark Theme
+  </mat-slide-toggle>
+  <div class="row">
+    <jo-open-file-button label="Datei öffnen" color="primary" (fileSelected)="onFileSelected($event)">
+    </jo-open-file-button>
+    <jo-open-file-button label="Datei öffnen" color="accent" (fileSelected)="onFileSelected($event)">
+    </jo-open-file-button>
+    <jo-open-file-button label="Datei öffnen" color="warn" (fileSelected)="onFileSelected($event)">
+    </jo-open-file-button>
+
+  </div>
+  <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>
