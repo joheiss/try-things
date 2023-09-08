@@ -1,0 +1,13 @@
+<button mat-raised-button class="jo-hide-button">Upload File</button>
+
+<label class="mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base" [ngClass]="{
+      'mat-primary' : color === 'primary',
+      'mat-accent' : color === 'accent',
+      'mat-warn' : color === 'warn'}">
+  <input type="file" (change)="onSelect($event)" />
+  <span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+  <span class="mdc-button__label">{{ label }}</span>
+  <span class="mat-mdc-focus-indicator"></span>
+  <span class="mat-mdc-button-touch-target"></span>
+  <span class="mat-ripple mat-mdc-button-ripple"></span>
+</label>

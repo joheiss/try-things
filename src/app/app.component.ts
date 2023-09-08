@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'try-things';
+
+  onFileSelected(file: File) {
+    console.log("File selected: ", file);
+  }
 }
