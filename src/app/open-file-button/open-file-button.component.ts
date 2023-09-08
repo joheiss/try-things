@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-open-file',
+  selector: 'jo-open-file-button',
   templateUrl: './open-file-button.component.html',
   styleUrls: ['./open-file-button.component.scss']
 })
